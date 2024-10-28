@@ -1,0 +1,128 @@
+.ratingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.ratingCard,
+.thankYouCard {
+    background: linear-gradient(to bottom, hsl(213, 19%, 18%) 50%, hsl(213, 19%, 18%) 100%);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.starIcon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 5px;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.ratingButtons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.ratingButton {
+    background-color: hsl(216, 12%, 8%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    padding: 15px;
+    margin: 0 5px;
+    font-weight: 700;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 50px;
+    height: 50px;
+}
+
+.active {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(213, 19%, 18%);
+}
+
+.ratingButton:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(213, 19%, 18%);
+    font-weight: 700;
+}
+
+.submitButton {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(213, 19%, 18%);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    letter-spacing: 3px;
+}
+
+.submitButton:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(216, 12%, 8%);
+}
+
+h1 {
+    font-family: "Overpass", sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+}
+
+@media (max-width: 375px) {
+    .ratingCard,
+    .thankYouCard {
+        padding: 15px;
+    }
+
+    .ratingButton {
+        padding: 8px 12px;
+        margin: 0 3px;
+    }
+
+    .submitButton {
+        padding: 8px 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .ratingCard,
+    .thankYouCard {
+        padding: 25px;
+    }
+
+    .ratingButton {
+        padding: 12px 20px;
+        margin: 0 7px;
+    }
+
+    .submitButton {
+        padding: 12px 24px;
+    }
+}
