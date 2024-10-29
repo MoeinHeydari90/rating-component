@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./RatingComponent.module.css";
 import starIcon from "../images/icon-star.svg";
+import thankYouIcon from "../images/illustration-thank-you.svg";
 
 const RatingComponent = () => {
     const [rating, setRating] = useState(null);
@@ -46,8 +47,11 @@ const RatingComponent = () => {
                 </div>
             ) : (
                 <div className={styles.thankYouCard}>
+                    <div className={styles.thankYouIcon}>
+                        <img src={thankYouIcon} alt="Thank You Icon" />
+                    </div>
+                    <p className={styles.ratingNumber}>You selected {rating} out of 5</p>
                     <h1>Thank you!</h1>
-                    <p>You selected {rating} out of 5.</p>
                     <p>
                         We appreciate you taking the time to give a rating. If you ever need more
                         support, don’t hesitate to get in touch!

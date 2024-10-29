@@ -14,11 +14,29 @@
     padding: 20px;
     text-align: left;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
     position: relative;
 }
 
+.thankYouCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.ratingNumber {
+    color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    padding: 10px;
+    background-color: hsl(216, 12%, 8%);
+    padding: 10px 25px;
+    text-align: center;
+    margin: 30px auto;
+    display: inline-block;
+    font-weight: 700;
+}
 .starIcon {
     position: relative;
     display: flex;
@@ -30,6 +48,13 @@
     padding: 15px;
     margin: 5px;
     background-color: hsl(216, 12%, 8%);
+}
+
+.thankYouIcon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ratingButtons {
@@ -86,6 +111,7 @@ h1 {
     font-family: "Overpass", sans-serif;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
+    margin: 0;
 }
 
 p {
